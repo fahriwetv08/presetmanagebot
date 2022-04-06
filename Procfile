@@ -1,1 +1,1 @@
-worker: python3 -m PMRobot
+worker: python3 -m SkyzuRobot
