@@ -91,21 +91,21 @@ Hit the /help to see available command.
 
 buttons = [
     [
-        InlineKeyboardButton(text="HELP & COMMAND", callback_data="help_back"),
+        InlineKeyboardButton(text="𝖧𝖾𝗅𝗉 % 𝖢𝗈𝗆𝗆𝖺𝗇𝖽", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="TENTANG SAYA", callback_data="Skyzu_"),
-        InlineKeyboardButton(text="COBA INLINE​", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="𝖳𝖾𝗇𝗍𝖺𝗇𝗀 𝖲𝖺𝗒𝖺", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="𝖳𝗋𝗒 𝖨𝗇𝗅𝗂𝗇𝖾​", switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(
-            text="LINK REPO​", url="https://github.com/fahriwetv08/presetmanagebot"
+            text="𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗈𝖽𝖾", url="https://github.com/fahriwetv08/presetmanagebot"
         ),
-        InlineKeyboardButton(text="DUKUNGAN​", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="𝖣𝗎𝗄𝗎𝗇𝗀𝖺𝗇​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="➗ TAMBAHKAN SAYAKE GRUP​ ➗",
+            text="✨ 𝖳𝖺𝗆𝖻𝖺𝗁𝗄𝖺𝗇 𝖲𝖺𝗒𝖺 𝖪𝖾 𝖦𝗋𝗎𝗉 ✨",
             url=f"t.me/{dispatcher.bot.username}?startgroup=new",
         ),
     ],
@@ -114,10 +114,10 @@ buttons = [
 HELP_STRINGS = """
 Click on the button bellow to get description about specifics command."""
 
-EMI_IMG = "https://telegra.ph/file/56811b69cbcece20bbebf.jpg"
+EMI_IMG = "https://telegra.ph/file/752e597281857206e1a9e.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
- You can support the project by contacting @skyzu \
+ You can support the project by contacting @antoniusfahri \
  Supporting isnt always financial! \
  Those who cannot provide monetary support are welcome to help us develop the bot at ."""
 
@@ -182,7 +182,7 @@ def send_help(chat_id, text, keyboard=None):
 
 def test(update: Update, context: CallbackContext):
     # pprint(eval(str(update)))
-    # update.effective_message.reply_text("Hola tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
+    # update.effective_message.reply_text("Halo tester! _I_ *have* `markdown`", parse_mode=ParseMode.MARKDOWN)
     update.effective_message.reply_text("This person edited a message")
     print(update.effective_message)
 
@@ -240,7 +240,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"<b>Hi I'm Skyzu robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
+            f"<b>Hi I'm Fahri robot!</b>\n<b>Started working since:</b> <code>{uptime}</code>",
             parse_mode=ParseMode.HTML,
         )
 
@@ -371,49 +371,49 @@ def Skyzu_about_callback(update, context):
     query = update.callback_query
     if query.data == "Skyzu_":
         query.message.edit_text(
-            text="๏ I'm *Skyzu*, a powerful group management bot built to help you manage your group easily."
+            text="๏ I'm *Fahr8*, a powerful group management bot built to help you manage your group easily."
             "\n• I can restrict users."
             "\n• I can greet users with customizable welcome messages and even set a group's rules."
             "\n• I have an advanced anti-flood system."
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
-            "\n\n Click on button bellow to get basic help for SkyzuRobot.",
+            "\n\n_Fahri's licensed under the GNU General Public License v3.0_"
+            "\n\n Click on button bellow to get basic help for presetrendmanagebot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
                         InlineKeyboardButton(
-                            text="ᴀᴅᴍɪɴs​", callback_data="Skyzu_admin"
+                            text="admin​", callback_data="fahri_admin"
                         ),
                         InlineKeyboardButton(
-                            text="ɴᴏᴛᴇs​", callback_data="Skyzu_notes"
-                        ),
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴘᴘᴏʀᴛ​", callback_data="Skyzu_support"
-                        ),
-                        InlineKeyboardButton(
-                            text="ᴄʀᴇᴅɪᴛs​", callback_data="Skyzu_credit"
+                            text="catatan​", callback_data="fahri_notes"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ᴍᴜsɪᴄᴘʟᴀʏᴇʀ​", callback_data="source_"
+                            text="support​", callback_data="fahri_support"
+                        ),
+                        InlineKeyboardButton(
+                            text="credit​", callback_data="fahri_credit"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_back"
+                            text="pemutar musik​", callback_data="source_"
+                        ),
+                    ],
+                    [
+                        InlineKeyboardButton(
+                            text="kembali", callback_data="Skyzu_back"
                         ),
                     ],
                 ]
             ),
         )
-    elif query.data == "Skyzu_back":
+    elif query.data == "fahri_back":
         first_name = update.effective_user.first_name
         uptime = get_readable_time((time.time() - StartTime))
         query.message.edit_text(
@@ -429,10 +429,10 @@ def Skyzu_about_callback(update, context):
             disable_web_page_preview=True,
         )
 
-    elif query.data == "Skyzu_admin":
+    elif query.data == "fahri_admin":
         query.message.edit_text(
-            text=f"*๏ Let's make your group bit effective now*"
-            f"\nCongragulations, {dispatcher.bot.first_name} now ready to manage your group."
+            text=f"*๏ sekarang siap untuk mengelola grup Anda*"
+            f"\nSelamat, {dispatcher.bot.first_name} sekarang siap untuk mengelola grup Anda."
             "\n\n*Admin Tools*"
             "\nBasic Admin tools help you to protect and powerup your group."
             "\nYou can ban members, Kick members, Promote someone as admin through commands of bot."
@@ -442,11 +442,11 @@ def Skyzu_about_callback(update, context):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")]]
+                [[InlineKeyboardButton(text="Kembali", callback_data="Skyzu_")]]
             ),
         )
 
-    elif query.data == "Skyzu_notes":
+    elif query.data == "Fahri_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -454,10 +454,10 @@ def Skyzu_about_callback(update, context):
             f"\n\nYou can also set buttons for notes and filters (refer help menu)",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_")]]
+                [[InlineKeyboardButton(text="Kembali", callback_data="Skyzu_")]]
             ),
         )
-    elif query.data == "Skyzu_support":
+    elif query.data == "Fahri_support":
         query.message.edit_text(
             text=f"*๏ {dispatcher.bot.first_name} support chats*"
             "\nJoin My Support Group/Channel for see or report a problem on Skyzu.",
@@ -465,13 +465,13 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
+                        InlineKeyboardButton(text="Support​", url="t.me/presetrend"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/ProjectSkyzu"
+                            text="channel 2​", url="https://t.me/playlistrend"
                         ),
                     ],
                     [
-                        InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
+                        InlineKeyboardButton(text="Kembali", callback_data="Skyzu_"),
                     ],
                 ]
             ),
@@ -485,7 +485,7 @@ def Skyzu_about_callback(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
+                        InlineKeyboardButton(text="fahri", url="t.me/antoniusfahri"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
