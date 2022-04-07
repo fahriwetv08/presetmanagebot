@@ -91,21 +91,21 @@ Hit the /help to see available command.
 
 buttons = [
     [
-        InlineKeyboardButton(text="ʜᴇʟᴘ & ᴄᴏᴍᴍᴀɴᴅ​", callback_data="help_back"),
+        InlineKeyboardButton(text="HELP & COMMAND", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="ᴀʙᴏᴜᴛ", callback_data="Skyzu_"),
-        InlineKeyboardButton(text="ᴛʀʏ ɪɴʟɪɴᴇ​", switch_inline_query_current_chat=""),
+        InlineKeyboardButton(text="TENTANG SAYA", callback_data="Skyzu_"),
+        InlineKeyboardButton(text="COBA INLINE​", switch_inline_query_current_chat=""),
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="LINK REPO​", url="https://github.com/fahriwetv08/presetmanagebot"
         ),
-        InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="DUKUNGAN​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(
-            text="➗ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ​ ➗",
+            text="➗ TAMBAHKAN SAYAKE GRUP​ ➗",
             url=f"t.me/{dispatcher.bot.username}?startgroup=new",
         ),
     ],
