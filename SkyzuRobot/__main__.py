@@ -81,10 +81,10 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-*Hello {} !*
+*Hai {} !*
 ────────────────────────
-✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @skyzu ✨
+✪ Aku adalah PRESETREND MANAGE yang dibuat untuk mengelola grup admin presetrend.
+✪ Dibuat Oleh @antoniusfahri ✨
 ────────────────────────
 Hit the /help to see available command.
 """
