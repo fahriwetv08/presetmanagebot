@@ -1,1 +1,1 @@
-worker: python3 -m Presetrobot
+worker: python3 -m presetrobot
