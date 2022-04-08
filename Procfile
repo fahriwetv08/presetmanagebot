@@ -1,1 +1,1 @@
-worker: python3 -m presetrobot
+worker: python3 -m SkyzuRobot
